@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Benevolence E - Grocery Web App</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="grocery.css">
+    </head>
+    <body>
+        <header>
+            <h1>Grocery Store Web Application</h1>
+        </header>
+        
+        <main>
+            <!--Project Description-->
+            <h2>Project Description</h2>
+            <table WIDTH="100%">
+            <td>In this project, we had to create a Web Application that may be used 
+            <br> by a Customer looking to purchase Grocery Store Items, as well as an 
+            <br> Order Processing Employee, whose job is to fulfill the online orders 
+            placed by Customers.</td></table>
+        
+            <table><tr><td>&nbsp;</td>
+            <p class="title">A Customer should be able to:</p>
+            <td>1. Search Grocery Store Products.<br><br>
+                2. Make a Purchase without creating a Customer Account.<br><br>
+                3. Create a new Customer Account.<br><br>
+                4. Login, Search Products and Make Purchases with their Customer Account.<br><br>
+                5. Change the information in their Customer Account, like Address, etc.</td></tr></table>
+
+            <table><tr><td>&nbsp;</td>
+            <p class="title">An Order Processing Employee should be able to:</p>
+            <td>1. Login. <br><br>
+                2. View a list of orders that need to be fulfilled.<br><br>
+                3. Change the state of an order from Open to Ready to Shipped/Picked up.</td></tr></table>
+        
+            <h2>My Contribution to the Project</h2>
+            <table><tr><td>&nbsp;</td>
+            <td>1. I built the business objects needed for the project. The business objects
+                   is helpful and is used to store application data. <br> Business objects can be 
+                   accessed by Web applications.<br><br>
+                2. I helped with the index.html, which is the landing page. This is the first page every 
+                   user sees when they open the site.<br><br>
+                3. I also built some of the servlets for the project like the Customer Login servlet and 
+                   the Employee Login servlet. <br> A servlet acts as a middle-man between the View and 
+                   the Model. It is that requests data from the server, validates the data,<br> and checks 
+                   it against the data stored in the database. The Customer Login servlet is code to check 
+                   against the data <br>(User ID & Password) that a customer enters. If information is 
+                   valid, login will be successful. If information is invalid, <br>a message is printed 
+                   out and login is unsuccessful. The Employee Login servlet also checks against data that
+                   an employee <br>enters in the login page and validates it.<br><br>
+                4. Some of the jsps I built are the Create Account jsp, and View Info jsp. A jsp 
+                (Java Server Page) contains Java code that <br> is used for creating web applications. It 
+                   processes data on the server side. The function of the Create Account jsp is to allow <br>a 
+                   customer create an account on the website with valid credentials and it appears on the database. 
+                   With that, a customer can<br> login on their next website visit and it will be valid. The View Info
+                   jsp allows a customer to view, change, or delete <br>their information from their profile. Only validated 
+                   login users can do this.<br><br></td></tr></table>
+        
+            <h2>Software used for this Project</h2>
+            <table><tr><td>&nbsp;</td>
+            <td>1. Microsoft Teams, for communication and uploading of files.<br><br>
+                2. Apache Netbeans IDE 14 to build the html, css, jsp, and servlet files.</td></tr></table>
+        
+            <p class="title">Video <a href="video.html">link</a></p>
+        
+            <h2>Screenshots</h2>
+            <table><tr><td>&nbsp;</td>
+            <td>
+            <!-- Slideshow screenshots -->
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 /8</div>
+                    <img src="customer.png" style="width:100%" alt="">
+                    <div class="text">Customer Information</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">2 /8</div>
+                    <img src="products.png" style="width:100%" alt="">
+                    <div class="text">Products</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">3 /8</div>
+                    <img src="cart.png" style="width:100%" alt="">
+                    <div class="text">Cart</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">4 /8</div>
+                    <img src="order.png" style="width:100%" alt="">
+                    <div class="text">Order</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">5 /8</div>
+                    <img src="order (2).png" style="width:100%" alt="">
+                    <div class="text">Placed Order</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">6 /8</div>
+                    <img src="open.png" style="width:100%" alt="">
+                    <div class="text">Open Orders</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">7 /8</div>
+                    <img src="ready.png" style="width:100%" alt="">
+                    <div class="text">Ready Orders</div>
+                </div>
+                
+                <div class="mySlides fade">
+                    <div class="numbertext">8 /8</div>
+                    <img src="complete.png" style="width:100%" alt="">
+                    <div class="text">Complete Orders</div>
+                </div>
+                
+                <!-- previous & next buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+            </div>
+            
+            </td></tr></table>
+        </main>
+        
+        <!-- Scripts -->
+			<script src="grocery.js"></script>
+        
+    </body>
+</html>
