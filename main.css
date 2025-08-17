@@ -1642,8 +1642,8 @@ input, select, textarea {
 		.image.featured {
 			display: block;
 			width: 100%;
-                        align-items: center;
-                        
+                        object-fit: contain;
+			margin: 0 0 2em 0;
 		}
 
 		.image.left {
